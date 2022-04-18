@@ -162,8 +162,6 @@ img {
 }
 .header-contact-list-item {
   margin-left: 50px;
-  display: flex;
-  align-items: center;
 }
 
 .header-contact-link {
@@ -174,13 +172,13 @@ img {
 }
 
 .header-contact-link::before {
+  display: inline-block;
   content: "";
   width: 16px;
-  height: 12px;
-  background-color: red;
+  height: 16px;
   margin-right: 10px;
   background-image: url("../images/mail.svg");
-  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
