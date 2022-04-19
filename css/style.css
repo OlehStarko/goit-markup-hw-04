@@ -8,6 +8,7 @@
   --header-link-active-color: #2196f3;
   --header-contact-link-active-color: #2196f3;
   --header-contact-link-color: #757575;
+  --header-contact-list-icon-color: #757575;
   --header-link-current-color: #2196f3;
   --hero-bg-color: #2f303a;
   --hero-btn-text-color: #ffffff;
@@ -22,12 +23,16 @@
   --team-item-color: #ffffff;
   --team-name-text-color: #212121;
   --team-position-text-color: #757575;
+  --team-social-button-color: #afb1b8;
+  --team-social-button-bg-color: #ffffff;
+  --team-social-button-active-color: #ffffff;
   --portfolio-btn-text-color: #212121;
   --portfolio-btn-bg-color: #f5f4fa;
   --portfolio-btn-active-color: #ffffff;
   --portfolio-btn-bg-active-color: #2196f3;
   --portfolio-work-name-color: #212121;
   --portfolio-description-color: #757575;
+  --portfolio-list-item-bg-color: #ffffff;
   --footer-bg-color: #2f303a;
   --footer-contact-color: #ffffff;
   --footer-logo-span-color: #ffffff;
@@ -139,12 +144,12 @@ img {
 }
 
 .header-contact-list-icon-mail {
-  fill: #757575;
+  fill: var(--header-contact-list-icon-color);
   margin-right: 10px;
 }
 
 .header-contact-list-icon-smartphone {
-  fill: #757575;
+  fill: var(--header-contact-list-icon-color);
   margin-right: 10px;
 }
 .header-link {
@@ -417,9 +422,9 @@ img {
   height: 44px;
   padding: 0;
   border: none;
-  color: #afb1b8;
+  color: var(--team-social-button-color);
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--team-social-button-bg-color);
 }
 
 .team-social-box-item {
@@ -433,7 +438,7 @@ img {
   cursor: pointer;
 }
 .team-social-button:hover .team-social-button-icon {
-  fill: #ffffff;
+  fill: var(--team-social-button-active-color);
 }
 
 .team-social-button-icon {
@@ -469,7 +474,7 @@ img {
 }
 
 .portfolio-list-item {
-  background-color: #fff;
+  background-color: var(--portfolio-list-item-bg-color);
 }
 
 .portfolio-list-item-description {
