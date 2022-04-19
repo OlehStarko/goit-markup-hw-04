@@ -33,11 +33,19 @@
   --portfolio-work-name-color: #212121;
   --portfolio-description-color: #757575;
   --portfolio-list-item-bg-color: #ffffff;
+  --portfolio-list-item-description-border-color: #eeeeee;
+  --clients-list-item-button-color: #afb1b8;
+  --clients-list-item-button-border-color: #afb1b8;
+  --clients-list-item-button-bg-color: #ffffff;
+  --clients-list-item-button-active-border-color: #188ce8;
   --footer-bg-color: #2f303a;
   --footer-contact-color: #ffffff;
   --footer-logo-span-color: #ffffff;
   --footer-contact-link-color: rgba(255, 255, 255, 0.6);
   --footer-contact-link-active-color: #2196f3;
+  --footer-social-text-color: #ffffff;
+  --footer-social-text-button-color: #ffffff;
+  --footer-social-button-active-color: #2196f3;
 }
 
 html {
@@ -479,10 +487,9 @@ img {
 
 .portfolio-list-item-description {
   padding: 24px;
-
   border-width: 0 1px 1px 1px;
   border-style: solid;
-  border-color: #eeeeee;
+  border-color: var(--portfolio-list-item-description-border-color);
   border-top: 0;
 }
 
@@ -543,13 +550,13 @@ p.portfolio-description {
   height: 92px;
   padding: 0;
   border: none;
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
+  color: var(--clients-list-item-button-color);
+  border: 1px solid var(--clients-list-item-button-border-color);
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--clients-list-item-button-bg-color);
 }
 .clients-list-item-button:hover {
-  border: 1px solid #188ce8;
+  border: 1px solid var(--clients-list-item-button-active-border-color);
   cursor: pointer;
 }
 .clients-list-item-button:hover .clients-list-item-button-icon {
@@ -628,7 +635,7 @@ p.footer-contact {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--footer-social-text-color);
 }
 
 .footer-social-button {
@@ -639,7 +646,7 @@ p.footer-contact {
   height: 44px;
   padding: 0;
   border: none;
-  color: #ffffff;
+  color: var(--footer-social-text-button-color);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -651,7 +658,7 @@ p.footer-contact {
   margin-right: 0;
 }
 .footer-social-button:hover {
-  background-color: #188ce8;
+  background-color: var(--footer-social-button-active-color);
   cursor: pointer;
 }
 
