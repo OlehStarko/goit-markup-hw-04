@@ -72,7 +72,7 @@
       <section class="hero-container">
         <div class="container">
           <h1 class="hero-main-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn">Заказать услугу</button>
+          <button class="hero-btn" data-open-modal>Заказать услугу</button>
         </div>
       </section>
       <section class="section">
@@ -122,7 +122,13 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-list-description-pl">
+                <p class="occupation-list-description-pl-text">
+                  Десктопные приложения
+                </p>
+              </div>
             </li>
+
             <li class="occupation-list-item">
               <img
                 class=""
@@ -131,6 +137,11 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-list-description-pl">
+                <p class="occupation-list-description-pl-text">
+                  Мобильные приложения
+                </p>
+              </div>
             </li>
             <li class="occupation-list-item">
               <img
@@ -140,6 +151,11 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-list-description-pl">
+                <p class="occupation-list-description-pl-text">
+                  Дизайнерские решения
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -523,5 +539,28 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button class="modal-close-btn" data-close-modal>
+          <svg width="30px" height="30px">
+            <use href="./images/icons-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+    </script>
   </body>
 </html>
